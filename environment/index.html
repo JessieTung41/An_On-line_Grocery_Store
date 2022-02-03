@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>On-line Grocery Store</title>
+        <style type="txt/css">
+            .browser{
+                overflow: hidden;  
+            }
+            
+            .list{
+                overflow: hidden;
+            }
+            
+            .cart{
+                overflow-y: scroll;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+        <iframe width="50%" height="100%" align="left" frameBorder="0" src="Browser.html" class="browser" scrolling="no"></iframe>
+        </div>
+        <div>
+        <iframe width="50%"  height="50%" align="right" frameBorder="0" name="database" src="ShoppingList.php" class="list" scrolling="no"></iframe>
+        </div>
+        <div>
+        <iframe width="50%"  height="50%" align="right" frameBorder="0" name="cart" src="ShoppingCart.php" class="cart"></iframe>
+        </div>
+        
+    </body>
+</html>

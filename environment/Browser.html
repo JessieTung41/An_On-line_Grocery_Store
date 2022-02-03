@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Browser Window</title>
+
+    <style>
+        .cat{
+            width: 640px;
+            height: 100px;
+            background-color: rgb(200, 191, 231);
+        }
+        
+        .logo{
+			width: 100px;
+			height: 80px;
+		}
+
+       
+        .cat .product{
+            float: left;
+            height: 50px;
+        }
+
+        .cat a{
+            display: block;
+            color: #3f48cc;
+            font-size: 13px;
+			height: 40px;
+            padding: 0 30px;
+            font-family: Arial;
+        }
+	
+		.cat .product .top{
+		    width: 640px;
+			position: absolute;
+			top: 130px;
+			background-color: rgb(200, 191, 231);
+			padding:  200px 0;
+ 			display: none;
+ 			left: 0px;
+		}
+		
+		.cat :hover .top{
+		    display: block;
+		}
+
+		.FrozenFood{
+		    position:absolute;
+            top:0;
+            left:0;
+            width: 400px;
+            height: 125px;
+		}
+		
+		.FreshFood{
+		    position:absolute;
+            top:0;
+            left: 20px;
+            width: 400px;
+            height: 221px;
+		}
+		
+		.Beverages{
+		   position:absolute;
+           top:0;
+           left: 70px;
+           width: 500px;
+           height: 115px; 
+		}
+		
+		.HomeHealth{
+		   position:absolute;
+           top:0;
+           left: 110px;
+           width: 400px;
+           height: 136px; 
+		}
+		
+		.PetFood{
+		   position:absolute;
+           top:0;
+           left: 210px;
+           width: 400px;
+           height: 143px; 
+		}
+		
+    </style>
+</head>
+
+<body style="background-color: rgb(200, 191, 231);">
+    <!-- 创建导航条的结构 -->
+
+    <div class="cat">
+	    <image class="logo" src="logo.png"><br>
+        <div class="product">
+            <a href="#">Frozen Food</a>       
+		    <div class="top">
+				<image src="image/BC2a.PNG" class="FrozenFood" usemap="#frozenfood"></image>
+				<map name="frozenfood" id="frozenfood">
+				    <area shape="rect" coords="20, 20, 150, 30" href="ShoppingList.php?product_id=1002" target="database">    
+				    <area shape="rect" coords="208, 40, 275, 55" href="ShoppingList.php?product_id=1000"  target="database">
+				    <area shape="rect" coords="300, 40, 375, 55" href="ShoppingList.php?product_id=1001"  target="database">
+				    <area shape="rect" coords="20, 65, 125, 80" href="ShoppingList.php?product_id=1003"  target="database">
+				    <area shape="rect" coords="200, 85, 260, 100" href="ShoppingList.php?product_id=1004"  target="database">
+				    <area shape="rect" coords="310, 85, 363, 100" href="ShoppingList.php?product_id=1005"  target="database">
+				</map>
+		    </div>
+	    </div>
+        <div class="product">
+            <a href="#">Fresh Food</a>
+			<div class="top">
+			    <image src="image/BC2b.PNG" class="FreshFood" usemap="#freshfood"></image>
+				<map name="freshfood" id="freshfood">
+				    <area shape="rect" coords="25, 25, 130, 45" href="ShoppingList.php?product_id=3002" target="database">    
+				    <area shape="rect" coords="190, 55, 270, 70" href="ShoppingList.php?product_id=3000"  target="database">
+				    <area shape="rect" coords="295, 55, 375, 70" href="ShoppingList.php?product_id=3001"  target="database">
+				    <area shape="rect" coords="25, 80, 140, 95" href="ShoppingList.php?product_id=3003"  target="database">
+				    <area shape="rect" coords="25, 100, 90, 120" href="ShoppingList.php?product_id=3004"  target="database">
+				    <area shape="rect" coords="25, 130, 80, 145" href="ShoppingList.php?product_id=3006"  target="database">
+				    <area shape="rect" coords="25, 155, 80, 170" href="ShoppingList.php?product_id=3007"  target="database">
+				    <area shape="rect" coords="25, 180, 90, 190" href="ShoppingList.php?product_id=3005"  target="database">
+				</map>
+		    </div>
+        </div>
+        <div class="product">
+            <a href="#">Beverages</a>
+			<div class="top">
+			    <image src="image/BC2c.PNG" class="Beverages" usemap="#beverages"></image>
+				<map name="beverages" id="beverages">
+				    <area shape="rect" coords="205, 25, 280, 40" href="ShoppingList.php?product_id=4003" target="database">    
+				    <area shape="rect" coords="310, 25, 380, 40" href="ShoppingList.php?product_id=4004"  target="database">
+				    <area shape="rect" coords="210, 50, 270, 65" href="ShoppingList.php?product_id=4000"  target="database">
+				    <area shape="rect" coords="310, 50, 380, 65" href="ShoppingList.php?product_id=4001"  target="database">
+				    <area shape="rect" coords="410, 50, 480, 65" href="ShoppingList.php?product_id=4002"  target="database">
+				    <area shape="rect" coords="20, 70, 120, 90" href="ShoppingList.php?product_id=4005"  target="database">
+				</map>
+		    </div>
+        </div>
+        <div class="product">
+            <a href="#">Home Health</a>
+			<div class="top">
+			    <image src="image/BC2d.PNG" class="HomeHealth" usemap="#homehealth"></image>
+				<map name="homehealth" id="homehealth">
+				    <area shape="rect" coords="15, 20, 85, 30" href="ShoppingList.php?product_id=2002" target="database">    
+				    <area shape="rect" coords="185, 40, 230, 53" href="ShoppingList.php?product_id=2000"  target="database">
+				    <area shape="rect" coords="300, 40, 360, 53" href="ShoppingList.php?product_id=2001"  target="database">
+				    <area shape="rect" coords="20, 60, 125, 75" href="ShoppingList.php?product_id=2005"  target="database">
+				    <area shape="rect" coords="165, 80, 265, 98" href="ShoppingList.php?product_id=2003"  target="database">
+				    <area shape="rect" coords="285, 80, 380, 98" href="ShoppingList.php?product_id=2004"  target="database">
+				    <area shape="rect" coords="20, 102, 120, 118" href="ShoppingList.php?product_id=2006"  target="database">
+				</map>
+		    </div>
+        </div>
+        <div class="product">
+            <a href="#">Pet Food</a>
+			<div class="top">
+			    <image src="image/BC2e.PNG" class="PetFood" usemap="#petfood"></image>
+				<map name="petfood" id="petfood">
+				    <area shape="rect" coords="20, 25, 100, 40" href="ShoppingList.php?product_id=5002" target="database">    
+				    <area shape="rect" coords="20, 48, 90, 65" href="ShoppingList.php?product_id=5003"  target="database">
+				    <area shape="rect" coords="170, 75, 245, 90" href="ShoppingList.php?product_id=5001"  target="database">
+				    <area shape="rect" coords="285, 70, 365, 90" href="ShoppingList.php?product_id=5000"  target="database">
+				    <area shape="rect" coords="20, 100, 100, 115" href="ShoppingList.php?product_id=5004"  target="database">
+				</map>
+		    </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
